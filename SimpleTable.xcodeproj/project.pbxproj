@@ -23,14 +23,14 @@
 		159A69D6140F2C0600704CA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		159A69D8140F2C0600704CA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		159A69DA140F2C0600704CA6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		159A69DE140F2C0600704CA6 /* SimpleTable-Info.plist */ = {isa = PBXFileReference; path = "SimpleTable-Info.plist"; sourceTree = "<group>"; };
+		159A69DE140F2C0600704CA6 /* SimpleTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTable-Info.plist"; sourceTree = "<group>"; };
 		159A69E0140F2C0600704CA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		159A69E2140F2C0600704CA6 /* SimpleTable-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleTable-Prefix.pch"; sourceTree = "<group>"; };
+		159A69E2140F2C0600704CA6 /* SimpleTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTable-Prefix.pch"; sourceTree = "<group>"; };
 		159A69E3140F2C0600704CA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		159A69E5140F2C0600704CA6 /* SimpleTableAppDelegate.h */ = {isa = PBXFileReference; path = SimpleTableAppDelegate.h; sourceTree = "<group>"; };
+		159A69E5140F2C0600704CA6 /* SimpleTableAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableAppDelegate.h; sourceTree = "<group>"; };
 		159A69E6140F2C0600704CA6 /* SimpleTableAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableAppDelegate.m; sourceTree = "<group>"; };
 		159A69E9140F2C0600704CA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		159A69EB140F2C0600704CA6 /* SimpleTableViewController.h */ = {isa = PBXFileReference; path = SimpleTableViewController.h; sourceTree = "<group>"; };
+		159A69EB140F2C0600704CA6 /* SimpleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
 		159A69EC140F2C0600704CA6 /* SimpleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
 		159A69EF140F2C0600704CA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SimpleTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */

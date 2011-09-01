@@ -9,9 +9,11 @@
 #import "SimpleTableViewController.h"
 
 @implementation SimpleTableViewController
+@synthesize listData;
 
 - (void)dealloc
 {
+    [listData release];
     [super dealloc];
 }
 
@@ -25,6 +27,13 @@
 
 #pragma mark - View lifecycle
 
+- (void)viewDidLoad
+{
+    self.listData = [[NSArray alloc] initWithObjects:@"Chuns", @"Xia", @"Qiu", @"Dong", nil];
+    
+    [super viewDidLoad];
+}
+
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -35,6 +44,7 @@
 
 - (void)viewDidUnload
 {
+    self.listData = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -44,6 +54,27 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark -
+#pragma mark Table View Data Source Methods
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.listData count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SimpleTableIdentifier"];
+    if (cell == nil)
+    {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                       reuseIdentifier:@"SimpleTableIdentifier"] autorelease];
+    }
+    
+    NSUInteger row = [indexPath row];
+    cell.textLabel.text = [listData objectAtIndex:row];
+    return cell;
 }
 
 @end
