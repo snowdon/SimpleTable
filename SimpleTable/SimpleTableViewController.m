@@ -10,6 +10,9 @@
 
 @implementation SimpleTableViewController
 @synthesize listData;
+@synthesize season;
+@synthesize names;
+@synthesize keys;
 
 - (void)dealloc
 {
@@ -30,6 +33,12 @@
 - (void)viewDidLoad
 {
     self.listData = [[NSArray alloc] initWithObjects:@"Chuns", @"Xia", @"Qiu", @"Dong", nil];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SeasonList" ofType:@"plist"];
+    //self.season = [[NSArray alloc] initWithContentsOfFile:path];
+    
+    self.names = [[NSDictionary alloc]initWithContentsOfFile:path];
+    
+    self.keys = [names allKeys];
     
     [super viewDidLoad];
 }
@@ -58,23 +67,48 @@
 
 #pragma mark -
 #pragma mark Table View Data Source Methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+   
+    return [keys count];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.listData count];
+    NSString *key = [keys objectAtIndex:section];
+    NSArray *nameSection = [names objectForKey:key];
+    return [nameSection count];
 }
+
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SimpleTableIdentifier"];
+    NSUInteger section = [indexPath section];
+    NSUInteger row = [indexPath row];
+    NSString *key = [keys objectAtIndex:section];
+    NSArray *nameSection = [names objectForKey:key];
+    
+    static NSString *SectionsTableIdentifier = @"SectionsTableIdentifier";
+                           
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SectionsTableIdentifier];
+    
     if (cell == nil)
     {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                       reuseIdentifier:@"SimpleTableIdentifier"] autorelease];
+        cell = [[[UITableViewCell alloc] 
+                 initWithStyle:UITableViewCellStyleDefault
+               reuseIdentifier:SectionsTableIdentifier] autorelease];
     }
     
-    NSUInteger row = [indexPath row];
-    cell.textLabel.text = [listData objectAtIndex:row];
+    cell.textLabel.text = [nameSection objectAtIndex:row];
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString *key = [keys objectAtIndex:section];
+    return key;
 }
 
 @end

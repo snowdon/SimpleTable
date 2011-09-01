@@ -16,6 +16,8 @@
 		159A69EA140F2C0600704CA6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 159A69E8140F2C0600704CA6 /* MainWindow.xib */; };
 		159A69ED140F2C0600704CA6 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159A69EC140F2C0600704CA6 /* SimpleTableViewController.m */; };
 		159A69F0140F2C0600704CA6 /* SimpleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 159A69EE140F2C0600704CA6 /* SimpleTableViewController.xib */; };
+		159A69F7140F319300704CA6 /* SeasonList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 159A69F6140F319300704CA6 /* SeasonList.plist */; };
+		159A69F9140F68EC00704CA6 /* artistlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 159A69F8140F68EC00704CA6 /* artistlist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		159A69EB140F2C0600704CA6 /* SimpleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
 		159A69EC140F2C0600704CA6 /* SimpleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
 		159A69EF140F2C0600704CA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SimpleTableViewController.xib; sourceTree = "<group>"; };
+		159A69F6140F319300704CA6 /* SeasonList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SeasonList.plist; sourceTree = "<group>"; };
+		159A69F8140F68EC00704CA6 /* artistlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = artistlist.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +97,12 @@
 		159A69DD140F2C0600704CA6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				159A69F8140F68EC00704CA6 /* artistlist.plist */,
 				159A69DE140F2C0600704CA6 /* SimpleTable-Info.plist */,
 				159A69DF140F2C0600704CA6 /* InfoPlist.strings */,
 				159A69E2140F2C0600704CA6 /* SimpleTable-Prefix.pch */,
 				159A69E3140F2C0600704CA6 /* main.m */,
+				159A69F6140F319300704CA6 /* SeasonList.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 				159A69E1140F2C0600704CA6 /* InfoPlist.strings in Resources */,
 				159A69EA140F2C0600704CA6 /* MainWindow.xib in Resources */,
 				159A69F0140F2C0600704CA6 /* SimpleTableViewController.xib in Resources */,
+				159A69F7140F319300704CA6 /* SeasonList.plist in Resources */,
+				159A69F9140F68EC00704CA6 /* artistlist.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
