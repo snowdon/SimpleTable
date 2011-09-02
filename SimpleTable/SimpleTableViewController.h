@@ -18,6 +18,7 @@
     NSDictionary *names;
     NSArray *keys;
     DetailViewController *dvController;
+    NSArray *arts;
 }
 
 @property (nonatomic, retain) NSArray *listData;
@@ -25,4 +26,5 @@
 @property (nonatomic, retain) NSDictionary *names;
 @property (nonatomic, retain) NSArray *keys;
 @property (nonatomic, retain) DetailViewController *dvController;
+@property (nonatomic, retain) NSArray *arts;
 @end

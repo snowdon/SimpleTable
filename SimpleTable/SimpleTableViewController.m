@@ -15,9 +15,11 @@
 @synthesize names;
 @synthesize keys;
 @synthesize dvController;
+@synthesize arts;
 
 - (void)dealloc
 {
+    [arts release];
     [listData release];
     [super dealloc];
 }
@@ -32,8 +34,12 @@
 
 #pragma mark - View lifecycle
 
+
 - (void)viewDidLoad
 {
+    self.arts = [[NSArray alloc] initWithObjects:@"chuns", @"xia", @"qiu", nil];
+    
+    
     self.listData = [[NSArray alloc] initWithObjects:@"Chuns", @"Xia", @"Qiu", @"Dong", nil];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SeasonList" ofType:@"plist"];
     //self.season = [[NSArray alloc] initWithContentsOfFile:path];
@@ -44,14 +50,6 @@
     
     [super viewDidLoad];
 }
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
 
 - (void)viewDidUnload
 {
@@ -69,22 +67,35 @@
 
 #pragma mark -
 #pragma mark Table View Data Source Methods
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    
+    return 1;
+}
 
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.arts count];
+}
+
+/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
    
     return [keys count];
 }
-
+ */
+/*
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSString *key = [keys objectAtIndex:section];
     NSArray *nameSection = [names objectForKey:key];
     return [nameSection count];
 }
+*/
 
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSUInteger section = [indexPath section];
@@ -107,19 +118,34 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
+*/
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    cell.textLabel.text = [self.arts objectAtIndex:indexPath.row];
+    return cell;
+}
+    
 
+/*
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     NSString *key = [keys objectAtIndex:section];
     return key;
 }
+ */
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
         
     DetailViewController *dvController = [[[DetailViewController alloc]
                                            init ] autorelease];
-//    NSLog(@"did select");
     
     [[self navigationController] pushViewController:dvController 
                                            animated:YES];
