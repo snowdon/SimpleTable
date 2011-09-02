@@ -115,21 +115,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+        
+    DetailViewController *dvController = [[[DetailViewController alloc]
+                                           init ] autorelease];
+//    NSLog(@"did select");
     
-    
-
-    DetailViewController *d = [[DetailViewController alloc] init ];
-    dvController = d;
-                               
-    
-    NSLog(@"did select");
-    
-    [self.navigationController pushViewController:dvController animated:YES];
-    
-    
-                               
-                               
-       
+    [[self navigationController] pushViewController:dvController 
+                                           animated:YES];
 }
     
     

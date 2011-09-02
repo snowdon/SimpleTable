@@ -20,8 +20,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-     
-    self.window.rootViewController = self.viewController;
+    SimpleTableViewController *simpleTableViewController = [[SimpleTableViewController alloc] init];
+    
+    
+    UINavigationController *navController = [[UINavigationController alloc]
+                                             initWithRootViewController:simpleTableViewController];
+    [simpleTableViewController release];
+    
+    [[self window] setRootViewController:navController];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
