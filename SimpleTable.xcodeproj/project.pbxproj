@@ -18,7 +18,8 @@
 		159A69F0140F2C0600704CA6 /* SimpleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 159A69EE140F2C0600704CA6 /* SimpleTableViewController.xib */; };
 		159A69F7140F319300704CA6 /* SeasonList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 159A69F6140F319300704CA6 /* SeasonList.plist */; };
 		159A69F9140F68EC00704CA6 /* artistlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 159A69F8140F68EC00704CA6 /* artistlist.plist */; };
-		159A6A3C140F799900704CA6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159A6A3A140F799900704CA6 /* DetailViewController.m */; };
+		15DCF0E414109DAF00C0651A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DCF0E214109DAF00C0651A /* DetailViewController.m */; };
+		15DCF0E514109DAF00C0651A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DCF0E314109DAF00C0651A /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +39,9 @@
 		159A69EF140F2C0600704CA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SimpleTableViewController.xib; sourceTree = "<group>"; };
 		159A69F6140F319300704CA6 /* SeasonList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SeasonList.plist; sourceTree = "<group>"; };
 		159A69F8140F68EC00704CA6 /* artistlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = artistlist.plist; sourceTree = "<group>"; };
-		159A6A39140F799900704CA6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		159A6A3A140F799900704CA6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		15DCF0E114109DAF00C0651A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		15DCF0E214109DAF00C0651A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		15DCF0E314109DAF00C0651A /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,9 @@
 				159A69EB140F2C0600704CA6 /* SimpleTableViewController.h */,
 				159A69EC140F2C0600704CA6 /* SimpleTableViewController.m */,
 				159A69EE140F2C0600704CA6 /* SimpleTableViewController.xib */,
-				159A6A39140F799900704CA6 /* DetailViewController.h */,
-				159A6A3A140F799900704CA6 /* DetailViewController.m */,
+				15DCF0E114109DAF00C0651A /* DetailViewController.h */,
+				15DCF0E214109DAF00C0651A /* DetailViewController.m */,
+				15DCF0E314109DAF00C0651A /* DetailViewController.xib */,
 				159A69DD140F2C0600704CA6 /* Supporting Files */,
 			);
 			path = SimpleTable;
@@ -164,6 +167,7 @@
 				159A69F0140F2C0600704CA6 /* SimpleTableViewController.xib in Resources */,
 				159A69F7140F319300704CA6 /* SeasonList.plist in Resources */,
 				159A69F9140F68EC00704CA6 /* artistlist.plist in Resources */,
+				15DCF0E514109DAF00C0651A /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +181,7 @@
 				159A69E4140F2C0600704CA6 /* main.m in Sources */,
 				159A69E7140F2C0600704CA6 /* SimpleTableAppDelegate.m in Sources */,
 				159A69ED140F2C0600704CA6 /* SimpleTableViewController.m in Sources */,
-				159A6A3C140F799900704CA6 /* DetailViewController.m in Sources */,
+				15DCF0E414109DAF00C0651A /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

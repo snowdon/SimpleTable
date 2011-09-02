@@ -104,6 +104,7 @@
     }
     
     cell.textLabel.text = [nameSection objectAtIndex:row];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 

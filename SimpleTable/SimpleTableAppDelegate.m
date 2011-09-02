@@ -25,6 +25,8 @@
     
     UINavigationController *navController = [[UINavigationController alloc]
                                              initWithRootViewController:simpleTableViewController];
+ 
+    
     [simpleTableViewController release];
     
     [[self window] setRootViewController:navController];

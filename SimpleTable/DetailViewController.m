@@ -2,7 +2,7 @@
 //  DetailViewController.m
 //  SimpleTable
 //
-//  Created by  Chuns on 11-9-1.
+//  Created by  Chuns on 11-9-2.
 //  Copyright 2011年 __MyCompanyName__. All rights reserved.
 //
 
