@@ -20,6 +20,7 @@
 		159A69F9140F68EC00704CA6 /* artistlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 159A69F8140F68EC00704CA6 /* artistlist.plist */; };
 		15DCF0E414109DAF00C0651A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DCF0E214109DAF00C0651A /* DetailViewController.m */; };
 		15DCF0E514109DAF00C0651A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DCF0E314109DAF00C0651A /* DetailViewController.xib */; };
+		15DCF0E71410A4C200C0651A /* arts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15DCF0E61410A4C200C0651A /* arts.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		15DCF0E114109DAF00C0651A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		15DCF0E214109DAF00C0651A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		15DCF0E314109DAF00C0651A /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		15DCF0E61410A4C200C0651A /* arts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = arts.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				159A69E2140F2C0600704CA6 /* SimpleTable-Prefix.pch */,
 				159A69E3140F2C0600704CA6 /* main.m */,
 				159A69F6140F319300704CA6 /* SeasonList.plist */,
+				15DCF0E61410A4C200C0651A /* arts.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				159A69F7140F319300704CA6 /* SeasonList.plist in Resources */,
 				159A69F9140F68EC00704CA6 /* artistlist.plist in Resources */,
 				15DCF0E514109DAF00C0651A /* DetailViewController.xib in Resources */,
+				15DCF0E71410A4C200C0651A /* arts.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

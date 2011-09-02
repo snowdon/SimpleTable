@@ -11,6 +11,13 @@
 
 @interface DetailViewController : UIViewController {
     
+    UITextView *bio;
+    UILabel *artname;
+    NSDictionary *artists;
 }
+
+@property (nonatomic, retain) IBOutlet UITextView *bio;
+@property (nonatomic, retain) IBOutlet UILabel *artname;
+@property (nonatomic, retain) NSDictionary *artists;
 
 @end

@@ -11,6 +11,10 @@
 
 @implementation DetailViewController
 
+@synthesize artname;
+@synthesize bio;
+@synthesize artists;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -22,6 +26,8 @@
 
 - (void)dealloc
 {
+    [artname release];
+    [bio release];
     [super dealloc];
 }
 
@@ -53,5 +59,13 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+- (void)viewWillAppear:(BOOL)animated 
+{
+    [super viewWillAppear:animated];
+    self.artname.text = [self.artists objectForKey:@"name"];
+    self.bio.text = [self.artists objectForKey:@"bio"];
+}
+
 
 @end

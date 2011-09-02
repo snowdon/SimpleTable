@@ -17,6 +17,7 @@
 @synthesize dvController;
 @synthesize arts;
 
+
 - (void)dealloc
 {
     [arts release];
@@ -37,11 +38,17 @@
 
 - (void)viewDidLoad
 {
-    self.arts = [[NSArray alloc] initWithObjects:@"chuns", @"xia", @"qiu", nil];
+  //  self.arts = [[NSMutableArray alloc] initWithObjects:@"chuns", @"xia", @"qiu", nil];
     
     
     self.listData = [[NSArray alloc] initWithObjects:@"Chuns", @"Xia", @"Qiu", @"Dong", nil];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SeasonList" ofType:@"plist"];
+    
+   
+    NSString *artspath = [[NSBundle mainBundle] pathForResource:@"arts" ofType:@"plist"];
+    self.arts = [[NSArray alloc] initWithContentsOfFile:artspath];
+    
+    
     //self.season = [[NSArray alloc] initWithContentsOfFile:path];
     
     self.names = [[NSDictionary alloc]initWithContentsOfFile:path];
@@ -128,7 +135,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    cell.textLabel.text = [self.arts objectAtIndex:indexPath.row];
+    cell.textLabel.text = [[self.arts objectAtIndex:indexPath.row] objectForKey:@"name"];
     return cell;
 }
     
@@ -146,12 +153,13 @@
         
     DetailViewController *dvController = [[[DetailViewController alloc]
                                            init ] autorelease];
+    dvController.artists = [self.arts objectAtIndex:indexPath.row];
     
     [[self navigationController] pushViewController:dvController 
                                            animated:YES];
 }
-    
-    
+
+
 
 
 /*
