@@ -7,12 +7,14 @@
 //
 
 #import "SimpleTableViewController.h"
+#import "DetailViewController.h"
 
 @implementation SimpleTableViewController
 @synthesize listData;
 @synthesize season;
 @synthesize names;
 @synthesize keys;
+@synthesize dvController;
 
 - (void)dealloc
 {
@@ -111,12 +113,45 @@
     return key;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    
+
+    DetailViewController *d = [[DetailViewController alloc] init ];
+    dvController = d;
+                               
+    
+    NSLog(@"did select");
+    
+    [self.navigationController pushViewController:dvController animated:YES];
+    
+    
+                               
+                               
+       
+}
+    
+    
+
+
 /*
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSAlert
+       
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"you selected"
+                                                    message:@"hello"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"yes"
+                                          otherButtonTitles:nil,nil];
+    [alert show];
+    
+    [alert release];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+ 
+    
 }
-*/
-
+ */
  
 @end
