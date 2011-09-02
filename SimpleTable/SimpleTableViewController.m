@@ -138,6 +138,8 @@
     cell.textLabel.text = [[self.arts objectAtIndex:indexPath.row] objectForKey:@"name"];
     UIImage *img = [UIImage imageNamed:[[self.arts objectAtIndex:indexPath.row] objectForKey:@"avator"]];
     cell.imageView.image = img;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     return cell;
 }
     
