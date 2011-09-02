@@ -136,8 +136,8 @@
     }
     
     cell.textLabel.text = [[self.arts objectAtIndex:indexPath.row] objectForKey:@"name"];
-//    UIImage *img = [UIImage imageNamed:[[self.arts objectAtIndex:indexPath.row] objectForKey:@"avator"]];
- //   cell.imageView.image = img;
+    UIImage *img = [UIImage imageNamed:[[self.arts objectAtIndex:indexPath.row] objectForKey:@"avator"]];
+    cell.imageView.image = img;
     return cell;
 }
     
