@@ -14,6 +14,7 @@
 @synthesize artname;
 @synthesize bio;
 @synthesize artists;
+//@synthesize avator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -65,6 +66,7 @@
     [super viewWillAppear:animated];
     self.artname.text = [self.artists objectForKey:@"name"];
     self.bio.text = [self.artists objectForKey:@"bio"];
+ //   self.avator = [UIImage imageNamed:@"avator"];
 }
 
 

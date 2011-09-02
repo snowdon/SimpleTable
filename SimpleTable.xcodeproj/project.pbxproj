@@ -21,6 +21,11 @@
 		15DCF0E414109DAF00C0651A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DCF0E214109DAF00C0651A /* DetailViewController.m */; };
 		15DCF0E514109DAF00C0651A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DCF0E314109DAF00C0651A /* DetailViewController.xib */; };
 		15DCF0E71410A4C200C0651A /* arts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15DCF0E61410A4C200C0651A /* arts.plist */; };
+		15DCF0ED1410B2F500C0651A /* avator1.png in Resources */ = {isa = PBXBuildFile; fileRef = 15DCF0E81410B2F400C0651A /* avator1.png */; };
+		15DCF0EE1410B2F500C0651A /* avator2.png in Resources */ = {isa = PBXBuildFile; fileRef = 15DCF0E91410B2F400C0651A /* avator2.png */; };
+		15DCF0EF1410B2F500C0651A /* avator3.png in Resources */ = {isa = PBXBuildFile; fileRef = 15DCF0EA1410B2F400C0651A /* avator3.png */; };
+		15DCF0F01410B2F500C0651A /* avator4.png in Resources */ = {isa = PBXBuildFile; fileRef = 15DCF0EB1410B2F500C0651A /* avator4.png */; };
+		15DCF0F11410B2F500C0651A /* avator5.png in Resources */ = {isa = PBXBuildFile; fileRef = 15DCF0EC1410B2F500C0651A /* avator5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		15DCF0E214109DAF00C0651A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		15DCF0E314109DAF00C0651A /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		15DCF0E61410A4C200C0651A /* arts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = arts.plist; sourceTree = "<group>"; };
+		15DCF0E81410B2F400C0651A /* avator1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator1.png; sourceTree = "<group>"; };
+		15DCF0E91410B2F400C0651A /* avator2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator2.png; sourceTree = "<group>"; };
+		15DCF0EA1410B2F400C0651A /* avator3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator3.png; sourceTree = "<group>"; };
+		15DCF0EB1410B2F500C0651A /* avator4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator4.png; sourceTree = "<group>"; };
+		15DCF0EC1410B2F500C0651A /* avator5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator5.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,7 @@
 		159A69DD140F2C0600704CA6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				15DCF0F21410B2F900C0651A /* avator */,
 				159A69F8140F68EC00704CA6 /* artistlist.plist */,
 				159A69DE140F2C0600704CA6 /* SimpleTable-Info.plist */,
 				159A69DF140F2C0600704CA6 /* InfoPlist.strings */,
@@ -116,6 +127,18 @@
 				15DCF0E61410A4C200C0651A /* arts.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15DCF0F21410B2F900C0651A /* avator */ = {
+			isa = PBXGroup;
+			children = (
+				15DCF0E81410B2F400C0651A /* avator1.png */,
+				15DCF0E91410B2F400C0651A /* avator2.png */,
+				15DCF0EA1410B2F400C0651A /* avator3.png */,
+				15DCF0EB1410B2F500C0651A /* avator4.png */,
+				15DCF0EC1410B2F500C0651A /* avator5.png */,
+			);
+			name = avator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +195,11 @@
 				159A69F9140F68EC00704CA6 /* artistlist.plist in Resources */,
 				15DCF0E514109DAF00C0651A /* DetailViewController.xib in Resources */,
 				15DCF0E71410A4C200C0651A /* arts.plist in Resources */,
+				15DCF0ED1410B2F500C0651A /* avator1.png in Resources */,
+				15DCF0EE1410B2F500C0651A /* avator2.png in Resources */,
+				15DCF0EF1410B2F500C0651A /* avator3.png in Resources */,
+				15DCF0F01410B2F500C0651A /* avator4.png in Resources */,
+				15DCF0F11410B2F500C0651A /* avator5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

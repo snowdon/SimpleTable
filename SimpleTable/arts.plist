@@ -7,24 +7,32 @@
 		<string>chun</string>
 		<key>bio</key>
 		<string>春</string>
+		<key>avator</key>
+		<string>avator1.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>xia</string>
 		<key>bio</key>
 		<string>夏天</string>
+		<key>avator</key>
+		<string>avator2.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>qiu</string>
 		<key>bio</key>
 		<string>dsafdsa</string>
+		<key>avator</key>
+		<string>avator3.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>dong</string>
 		<key>bio</key>
 		<string>dsafdsa</string>
+		<key>avator</key>
+		<string>avator4.png</string>
 	</dict>
 </array>
 </plist>

@@ -14,10 +14,12 @@
     UITextView *bio;
     UILabel *artname;
     NSDictionary *artists;
+ //   UIImage *avator;
 }
 
 @property (nonatomic, retain) IBOutlet UITextView *bio;
 @property (nonatomic, retain) IBOutlet UILabel *artname;
 @property (nonatomic, retain) NSDictionary *artists;
+//@property (nonatomic, retain) UIImage *avator;
 
 @end
